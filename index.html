@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- This div below has calculator display -->
+        <div class="calci-display">
+            <input type="text" maxlength="25" class="display" value="0" readonly>
+        </div>
+
+        <!-- This div below contains calculator's button -->
+        <div class="calci-btns">
+
+            <!-- for  7,8,9 and + -->
+            <div class="btn-holder">
+                <div class="button" id="7">7</div>
+                <div class="button" id="8">8</div>
+                <div class="button" id="9">9</div>
+                <div class="button no-listener" id="+">+</div>
+            </div>
+
+            <!-- for 4,5,6 and - -->
+            <div class="btn-holder">
+                <div class="button" id="4">4</div>
+                <div class="button" id="5">5</div>
+                <div class="button" id="6">6</div>
+                <div class="button no-listener" id="-">-</div>
+            </div>
+
+            <!-- for  1,2,3 and * -->
+            <div class="btn-holder">
+                <div class="button" id="1">1</div>
+                <div class="button" id="2">2</div>
+                <div class="button" id="3">3</div>
+                <div class="button no-listener" id="*">x</div>
+            </div>
+
+            <!-- for 0, ., = and / -->
+            <div class="btn-holder">
+                <div class="button ac no-listener" onclick="clearDisplay()">AC</div>
+                <div class="button" id="0">0</div>
+                <div class="button no-listener equal-to">=</div>
+                <div class="button no-listener" id="/">/</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
